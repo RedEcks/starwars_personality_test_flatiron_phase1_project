@@ -1,0 +1,76 @@
+*,*::before,*::after{
+box-sizing: border-box;
+font-family:Arial;
+}
+
+body{
+    background-image: url("C:/Users/xavie/Pictures/Saved Pictures/photo-1534796636912-3b95b3ab5986.jpg");
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap:10px;
+    margin:20px 0;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover{
+    border-color: black;
+}
+
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.site-logo{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.mascots{
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.mascots img{
+    width: 200%;
+    height: auto;
+}
