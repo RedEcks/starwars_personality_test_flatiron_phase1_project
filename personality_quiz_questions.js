@@ -221,7 +221,8 @@ function setAnswers(questions){
     console.log("ans values",answerValues)
     for(let i=0;i<numberOfAns;i++){
         buttons[i].addEventListener('click', buttonClick)
-        
+        buttons[i].addEventListener('mouseover',(e)=>{e.target.style.backgroundColor="salmon"})
+        buttons[i].addEventListener('mouseleave',(e)=>{e.target.style.backgroundColor="whitesmoke"})
     }
     
     for(element in buttons){
